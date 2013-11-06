@@ -7,6 +7,7 @@
 //
 
 #import "ANAppDelegate.h"
+#import "ANViewController.h"
 
 @implementation ANAppDelegate
 
@@ -15,6 +16,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    ANViewController *viewController = [[ANViewController alloc]initWithNibName:@"ANViewController" bundle:nil];
+    
+    self.window.rootViewController = viewController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
