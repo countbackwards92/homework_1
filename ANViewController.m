@@ -7,6 +7,7 @@
 //
 
 #import "ANViewController.h"
+#import "ANTableViewController.h"
 
 @interface ANViewController ()
 
@@ -40,5 +41,22 @@
     self.pushCount++;
     [self.countLabel setText:[NSString stringWithFormat:@"%d",self.pushCount]];
 }
+
+- (IBAction)goToTableView:(id)sender {
+    UIViewController *sec=[[ANTableViewController alloc] initWithNibName:@"ANTableViewController" bundle:nil];
+    [self.navigationController pushViewController:sec animated:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+    
+	[self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+	[super viewWillDisappear:animated];
+    
+	[self.navigationController setNavigationBarHidden:NO animated:YES];
+}	
 
 @end

@@ -11,6 +11,8 @@
 
 @implementation ANAppDelegate
 
+@synthesize navController;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -19,7 +21,9 @@
     
     ANViewController *viewController = [[ANViewController alloc]initWithNibName:@"ANViewController" bundle:nil];
     
-    self.window.rootViewController = viewController;
+    self.navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    self.window.rootViewController = self.navController;
     
     [self.window makeKeyAndVisible];
     return YES;

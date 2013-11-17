@@ -21,6 +21,10 @@
 		C38BDAAE182A82CB002A861E /* homework_1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C38BDAAD182A82CB002A861E /* homework_1Tests.m */; };
 		C38BDABA182A82F1002A861E /* ANViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C38BDAB8182A82F1002A861E /* ANViewController.m */; };
 		C38BDABB182A82F1002A861E /* ANViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38BDAB9182A82F1002A861E /* ANViewController.xib */; };
+		C3FD436F1838F8A400FFA360 /* ANTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD436D1838F8A400FFA360 /* ANTableViewController.m */; };
+		C3FD43701838F8A400FFA360 /* ANTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FD436E1838F8A400FFA360 /* ANTableViewController.xib */; };
+		C3FD437418390EFA00FFA360 /* ANTableCellEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD437218390EFA00FFA360 /* ANTableCellEditController.m */; };
+		C3FD437518390EFA00FFA360 /* ANTableCellEditController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FD437318390EFA00FFA360 /* ANTableCellEditController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		C38BDAB7182A82F1002A861E /* ANViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ANViewController.h; path = ../ANViewController.h; sourceTree = "<group>"; };
 		C38BDAB8182A82F1002A861E /* ANViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ANViewController.m; path = ../ANViewController.m; sourceTree = "<group>"; };
 		C38BDAB9182A82F1002A861E /* ANViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ANViewController.xib; path = ../ANViewController.xib; sourceTree = "<group>"; };
+		C3FD436C1838F8A400FFA360 /* ANTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTableViewController.h; sourceTree = "<group>"; };
+		C3FD436D1838F8A400FFA360 /* ANTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTableViewController.m; sourceTree = "<group>"; };
+		C3FD436E1838F8A400FFA360 /* ANTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ANTableViewController.xib; sourceTree = "<group>"; };
+		C3FD437118390EFA00FFA360 /* ANTableCellEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTableCellEditController.h; sourceTree = "<group>"; };
+		C3FD437218390EFA00FFA360 /* ANTableCellEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTableCellEditController.m; sourceTree = "<group>"; };
+		C3FD437318390EFA00FFA360 /* ANTableCellEditController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ANTableCellEditController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +122,16 @@
 		C38BDA8E182A82CB002A861E /* homework_1 */ = {
 			isa = PBXGroup;
 			children = (
+				C3FD436C1838F8A400FFA360 /* ANTableViewController.h */,
+				C3FD436D1838F8A400FFA360 /* ANTableViewController.m */,
+				C3FD437118390EFA00FFA360 /* ANTableCellEditController.h */,
+				C3FD437218390EFA00FFA360 /* ANTableCellEditController.m */,
+				C3FD437318390EFA00FFA360 /* ANTableCellEditController.xib */,
+				C3FD436E1838F8A400FFA360 /* ANTableViewController.xib */,
 				C38BDAB9182A82F1002A861E /* ANViewController.xib */,
-				C38BDA97182A82CB002A861E /* ANAppDelegate.h */,
 				C38BDAB7182A82F1002A861E /* ANViewController.h */,
 				C38BDAB8182A82F1002A861E /* ANViewController.m */,
+				C38BDA97182A82CB002A861E /* ANAppDelegate.h */,
 				C38BDA98182A82CB002A861E /* ANAppDelegate.m */,
 				C38BDA9A182A82CB002A861E /* Images.xcassets */,
 				C38BDA8F182A82CB002A861E /* Supporting Files */,
@@ -228,6 +244,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3FD43701838F8A400FFA360 /* ANTableViewController.xib in Resources */,
+				C3FD437518390EFA00FFA360 /* ANTableCellEditController.xib in Resources */,
 				C38BDA93182A82CB002A861E /* InfoPlist.strings in Resources */,
 				C38BDABB182A82F1002A861E /* ANViewController.xib in Resources */,
 				C38BDA9B182A82CB002A861E /* Images.xcassets in Resources */,
@@ -249,9 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3FD436F1838F8A400FFA360 /* ANTableViewController.m in Sources */,
 				C38BDA95182A82CB002A861E /* main.m in Sources */,
 				C38BDABA182A82F1002A861E /* ANViewController.m in Sources */,
 				C38BDA99182A82CB002A861E /* ANAppDelegate.m in Sources */,
+				C3FD437418390EFA00FFA360 /* ANTableCellEditController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +472,7 @@
 				C38BDAB3182A82CB002A861E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C38BDAB4182A82CB002A861E /* Build configuration list for PBXNativeTarget "homework_1Tests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +481,7 @@
 				C38BDAB6182A82CB002A861E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfb-fq-5un">
-                    <rect key="frame" x="63" y="95" width="194" height="83"/>
+                    <rect key="frame" x="63" y="132" width="194" height="83"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="38"/>
                     <color key="textColor" red="0.52502972146739135" green="0.061585467976647462" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -30,6 +30,16 @@
                     </state>
                     <connections>
                         <action selector="countButtonPush:" destination="-1" eventType="touchUpInside" id="cdd-bi-HwO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzd-jU-BRz">
+                    <rect key="frame" x="82" y="371" width="157" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="GO TO HOMEWORK 2">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goToTableView:" destination="-1" eventType="touchUpInside" id="rH4-0i-Era"/>
                     </connections>
                 </button>
             </subviews>
