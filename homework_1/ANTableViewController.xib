@@ -15,8 +15,8 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1K5-i8-4sm">
-                    <rect key="frame" x="0.0" y="96" width="320" height="452"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1K5-i8-4sm">
+                    <rect key="frame" x="0.0" y="58" width="320" height="490"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
@@ -24,8 +24,8 @@
                         <outlet property="delegate" destination="-1" id="YAx-ou-Yk7"/>
                     </connections>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="838-ec-vHF">
-                    <rect key="frame" x="128" y="58" width="65" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="838-ec-vHF">
+                    <rect key="frame" x="130" y="20" width="62" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Add item">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -36,6 +36,15 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="1K5-i8-4sm" secondAttribute="centerX" id="Jla-dJ-GBN"/>
+                <constraint firstItem="838-ec-vHF" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" symbolic="YES" id="RkG-3X-uoP"/>
+                <constraint firstItem="1K5-i8-4sm" firstAttribute="top" secondItem="838-ec-vHF" secondAttribute="bottom" constant="8" symbolic="YES" id="Tz6-Vf-lZi"/>
+                <constraint firstAttribute="trailing" secondItem="1K5-i8-4sm" secondAttribute="trailing" id="WrO-Dy-o4I"/>
+                <constraint firstItem="1K5-i8-4sm" firstAttribute="centerX" secondItem="838-ec-vHF" secondAttribute="centerX" constant="-0.5" id="b2s-oN-f1O"/>
+                <constraint firstItem="1K5-i8-4sm" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="xJ8-yh-g2J"/>
+                <constraint firstAttribute="bottom" secondItem="1K5-i8-4sm" secondAttribute="bottom" constant="20" id="ykl-8d-mJM"/>
+            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>

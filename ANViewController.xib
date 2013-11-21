@@ -15,15 +15,15 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfb-fq-5un">
-                    <rect key="frame" x="63" y="132" width="194" height="83"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfb-fq-5un">
+                    <rect key="frame" x="134" y="20" width="52" height="46"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="38"/>
                     <color key="textColor" red="0.52502972146739135" green="0.061585467976647462" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="is6-ky-E1d">
-                    <rect key="frame" x="103" y="283" width="114" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="is6-ky-E1d">
+                    <rect key="frame" x="126" y="283" width="69" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="PUSH ME">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -32,8 +32,8 @@
                         <action selector="countButtonPush:" destination="-1" eventType="touchUpInside" id="cdd-bi-HwO"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzd-jU-BRz">
-                    <rect key="frame" x="82" y="371" width="157" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzd-jU-BRz">
+                    <rect key="frame" x="82" y="518" width="157" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="GO TO HOMEWORK 2">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -42,8 +42,28 @@
                         <action selector="goToTableView:" destination="-1" eventType="touchUpInside" id="rH4-0i-Era"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ll1-nm-PDG">
+                    <rect key="frame" x="64" y="480" width="192" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="SOME PRETTY ANIMATION">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="gotoAnimation:" destination="-1" eventType="touchUpInside" id="pR3-BZ-U62"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pfb-fq-5un" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" symbolic="YES" id="0dS-HZ-6xf"/>
+                <constraint firstItem="is6-ky-E1d" firstAttribute="centerX" secondItem="pfb-fq-5un" secondAttribute="centerX" id="R4S-cw-FxB"/>
+                <constraint firstItem="gzd-jU-BRz" firstAttribute="top" secondItem="ll1-nm-PDG" secondAttribute="bottom" constant="8" symbolic="YES" id="RR0-1b-fcX"/>
+                <constraint firstAttribute="centerY" secondItem="is6-ky-E1d" secondAttribute="centerY" constant="-14" id="Z7y-jQ-1Zf"/>
+                <constraint firstAttribute="centerX" secondItem="gzd-jU-BRz" secondAttribute="centerX" id="dvn-ot-Ca4"/>
+                <constraint firstItem="is6-ky-E1d" firstAttribute="centerX" secondItem="gzd-jU-BRz" secondAttribute="centerX" id="fYF-GY-obI"/>
+                <constraint firstAttribute="bottom" secondItem="gzd-jU-BRz" secondAttribute="bottom" constant="20" symbolic="YES" id="gw3-tm-CVV"/>
+                <constraint firstItem="ll1-nm-PDG" firstAttribute="centerX" secondItem="gzd-jU-BRz" secondAttribute="centerX" constant="-0.5" id="kc2-WH-iah"/>
+            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>

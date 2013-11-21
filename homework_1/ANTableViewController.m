@@ -73,17 +73,19 @@
         [self.navigationItem setBackBarButtonItem: backButton];
         
         self.navigationItem.rightBarButtonItem = self.editButtonItem;
-        
+        self.navigationItem.rightBarButtonItem.title = @"Rearrange";
         self.navigationItem.title = @"Hello Table";
         // Custom initialization
     }
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.navigationController.navigationBar.translucent = NO;
+
     if (!self.items) self.items = [[NSMutableArray alloc] initWithObjects:@"Row #1", @"Row #2", @"Row #3", nil];
     // Do any additional setup after loading the view from its nib.
 }
@@ -197,5 +199,14 @@
         [self.tableView setEditing:NO animated:YES];
     }
     
+    if (editing)
+    {
+        self.editButtonItem.title = @"Done";
+    }
+    else
+    {
+        self.editButtonItem.title = @"Rearrange";
+        
+    }
 }
 @end

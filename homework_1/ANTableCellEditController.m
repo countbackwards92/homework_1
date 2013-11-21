@@ -25,8 +25,8 @@
                                        initWithTitle: @"Cancel"
                                        style: UIBarButtonItemStyleBordered
                                        target: nil action: nil];
-        
         [self.navigationItem setBackBarButtonItem: backButton];
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:nil action:@selector(doneEditing:)];
         
 
     }
@@ -45,6 +45,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self.textView setText:self.initialString];
+    self.navigationController.navigationBar.translucent = NO;
     if (self.indexindex == -1) {
         self.navigationItem.title = @"Add Item";
     } else {

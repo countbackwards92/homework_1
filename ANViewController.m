@@ -8,6 +8,7 @@
 
 #import "ANViewController.h"
 #import "ANTableViewController.h"
+#import "ANAnimatedButtonsController.h"
 
 @interface ANViewController ()
 
@@ -29,6 +30,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.navigationController.navigationBar.translucent = NO;
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -41,12 +44,16 @@
     self.pushCount++;
     [self.countLabel setText:[NSString stringWithFormat:@"%d",self.pushCount]];
 }
+- (IBAction)gotoAnimation:(id)sender {
+    UIViewController *sec = [[ANAnimatedButtonsController alloc] initWithNibName:@"ANAnimatedButtonsController" bundle:nil];
+    [self.navigationController pushViewController:sec animated:YES];
+}
 
 - (IBAction)goToTableView:(id)sender {
     UIViewController *sec=[[ANTableViewController alloc] initWithNibName:@"ANTableViewController" bundle:nil];
     [self.navigationController pushViewController:sec animated:YES];
 }
-
+/*
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
     
@@ -57,6 +64,6 @@
 	[super viewWillDisappear:animated];
     
 	[self.navigationController setNavigationBarHidden:NO animated:YES];
-}	
+}*/	
 
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C387018B183D4CF4005C7530 /* ANAnimatedButtonsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3870189183D4CF4005C7530 /* ANAnimatedButtonsController.m */; };
+		C387018C183D4CF4005C7530 /* ANAnimatedButtonsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C387018A183D4CF4005C7530 /* ANAnimatedButtonsController.xib */; };
 		C38BDA89182A82CA002A861E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38BDA88182A82CA002A861E /* Foundation.framework */; };
 		C38BDA8B182A82CB002A861E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38BDA8A182A82CB002A861E /* CoreGraphics.framework */; };
 		C38BDA8D182A82CB002A861E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38BDA8C182A82CB002A861E /* UIKit.framework */; };
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C3870188183D4CF4005C7530 /* ANAnimatedButtonsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANAnimatedButtonsController.h; sourceTree = "<group>"; };
+		C3870189183D4CF4005C7530 /* ANAnimatedButtonsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANAnimatedButtonsController.m; sourceTree = "<group>"; };
+		C387018A183D4CF4005C7530 /* ANAnimatedButtonsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ANAnimatedButtonsController.xib; sourceTree = "<group>"; };
 		C38BDA85182A82CA002A861E /* homework_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homework_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38BDA88182A82CA002A861E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C38BDA8A182A82CB002A861E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -127,6 +132,9 @@
 				C3FD437118390EFA00FFA360 /* ANTableCellEditController.h */,
 				C3FD437218390EFA00FFA360 /* ANTableCellEditController.m */,
 				C3FD437318390EFA00FFA360 /* ANTableCellEditController.xib */,
+				C3870188183D4CF4005C7530 /* ANAnimatedButtonsController.h */,
+				C3870189183D4CF4005C7530 /* ANAnimatedButtonsController.m */,
+				C387018A183D4CF4005C7530 /* ANAnimatedButtonsController.xib */,
 				C3FD436E1838F8A400FFA360 /* ANTableViewController.xib */,
 				C38BDAB9182A82F1002A861E /* ANViewController.xib */,
 				C38BDAB7182A82F1002A861E /* ANViewController.h */,
@@ -249,6 +257,7 @@
 				C38BDA93182A82CB002A861E /* InfoPlist.strings in Resources */,
 				C38BDABB182A82F1002A861E /* ANViewController.xib in Resources */,
 				C38BDA9B182A82CB002A861E /* Images.xcassets in Resources */,
+				C387018C183D4CF4005C7530 /* ANAnimatedButtonsController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +279,7 @@
 				C3FD436F1838F8A400FFA360 /* ANTableViewController.m in Sources */,
 				C38BDA95182A82CB002A861E /* main.m in Sources */,
 				C38BDABA182A82F1002A861E /* ANViewController.m in Sources */,
+				C387018B183D4CF4005C7530 /* ANAnimatedButtonsController.m in Sources */,
 				C38BDA99182A82CB002A861E /* ANAppDelegate.m in Sources */,
 				C3FD437418390EFA00FFA360 /* ANTableCellEditController.m in Sources */,
 			);
